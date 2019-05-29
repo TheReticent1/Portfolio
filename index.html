@@ -1,0 +1,202 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 100) {
+          $(".navbar").addClass("nav-bg");
+        } else {
+          $(".navbar").removeClass("nav-bg");
+        }
+      });
+    });
+  </script>
+  <title>Kamlesh D. Mohane</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#abt">About</a></li>
+      <li><a href="#port">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <div class="homepage" id="home">
+    <div class="name-card">
+      <h1>Kamlesh D. Mohane</h1>
+      <span>Fullstack Web Developer</span>
+      <a href="#contact" class="hire-btn">Hire Me</a>
+    </div>
+  </div>
+  <div id="abt" style="height: 70px;"></div>
+  <div class="container">
+    <div class="content">
+      <div class="skills">
+        <h1>My Skills</h1>
+        <li>
+          <h3>HTML5</h3><span class="bar" title="90%"><span class="html"></span></span>
+        </li>
+        <li>
+          <h3>CSS3</h3><span class="bar" title="60%"><span class="css"></span></span>
+        </li>
+        <li>
+          <h3>JavaScript / ES6</h3><span class="bar" title="50%"><span class="javascript"></span></span>
+        </li>
+        <li>
+          <h3>PHP</h3><span class="bar" title="75%"><span class="php"></span></span>
+        </li>
+        <li>
+          <h3>ReactJs</h3><span class="bar" title="70%"><span class="react"></span></span>
+        </li>
+        <li>
+          <h3>ExpressJs</h3><span class="bar" title="75%"><span class="express"></span></span>
+        </li>
+        <li>
+          <h3>MongoDB</h3><span class="bar" title="60%"><span class="mongo"></span></span>
+        </li>
+        <li>
+          <h3>Postgresql</h3><span class="bar" title="70%"><span class="postgres"></span></span>
+        </li>
+      </div>
+      <div class="about">
+        <div class="heading">
+          <h1>About Me</h1>
+        </div>
+        <div class="card">
+          <div class="intro">
+            <h3>Kamlesh D. Mohane</h3>
+            <li>Freelance Web Developer</li>
+            <li>B.E (PES MCOE Pune)</li>
+            <li>kamleshmohane78@gmail.com</li>
+            <li>+91 8830374665</li>
+          </div>
+          <div class="images">
+            <img src="./images/kamlesh.jpg" alt="kamlesh" />
+          </div>
+        </div>
+        <div class="introduction">
+          <p>
+            I'm a fullstack web developer who likes to work on new technologies. I am having 1 year of self experience
+            in ReactJs, ExpressJs, MongoDB and PostgreSql. I also used PHP with MySQL for college student projects. I
+            like to work in challenging organizations
+            to enhance my technical skills.
+          </p>
+          <p>
+            My on going project is an restaurant web application in Reactjs. For the backend I'm using ExpressJs for
+            creating models and routes, mongoose as a ORM and MongoDB to store data.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="anchor">
+      <a href="#port">Explore Projects</a>
+    </div>
+  </div>
+
+  <div class="partion">
+    <div class="head2" style="color: antiquewhite">
+      <h1>Why Choose Me?</h1>
+    </div>
+    <div class="card" style="justify-content: center">
+      <div class="service-card">
+        <div class="img-content">
+          <img src="./images/briefcase.png" alt="work" />
+        </div>
+        <p class="p">Passionate toward work</p>
+      </div>
+      <div class="service-card">
+        <!-- <i class="fas fa-layer-group fa-5x"></i> -->
+        <div class="img-content">
+          <img src="./images/handshake.png" alt="work" />
+        </div>
+        <p class="p">Positive experience with clients</p>
+      </div>
+      <div class="service-card">
+        <!-- <i class="fas fa-mobile-alt fa-5x"></i> -->
+        <div class="img-content">
+          <img src="./images/growth.png" alt="work" />
+        </div>
+        <p class="p">Flexible to adapt changes</p>
+      </div>
+      <div class="service-card">
+        <!-- <i class="fas fa-mobile-alt fa-5x"></i> -->
+        <div class="img-content">
+          <img src="./images/responsive.png" alt="work" />
+        </div>
+        <p class="p">Responsive Web designing</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- projects -->
+  <div id="port" style="height: 70px;"></div>
+  <div class="container">
+    <div class="head2">
+      <h1>Creative Work</h1>
+    </div>
+    <div class="content">
+      <div class="card" style="flex-wrap: wrap;justify-content: center">
+        <a href="https://www.google.co.in" target="blank">
+          <div class="projects" data="Spicy Corner">
+            <img src="./images/restaurant.jpg" />
+          </div>
+        </a>
+        <a href="https://lawfirm.herokuapp.com" target="blank">
+          <div class="projects" data="Lawfirm">
+            <img src="./images/law.jpg" />
+          </div>
+        </a>
+        <a href="https://lawfirm.herokuapp.com" target="blank">
+          <div class="projects" data="Department Management">
+            <img src="./images/college.jpg" />
+          </div>
+        </a>
+        <a href="https://lawfirm.herokuapp.com" target="blank">
+          <div class="projects" data="Hostel Management">
+            <img src="./images/hostel.jpg" />
+          </div>
+        </a>
+        <a href="https://lawfirm.herokuapp.com" target="blank">
+          <div class="projects" data="Portfolio">
+            <img src="./images/portfolio.jpg" />
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- contactus -->
+  <div id="contact" style="height: 50px;"></div>
+  <div class="partion p2" style="margin-bottom: 0">
+    <div class="section">
+      <div class="head2">
+        <h1>Get In Touch</h1>
+        <p><i class="fas fa-map-marker-alt">&nbsp;</i> Hinjewadi Phase 1, Shivaji chowk Pune - 411058</p>
+        <p><i class="fas fa-mobile-alt">&nbsp;</i> +91 8830374665</p>
+        <p><i class="far fa-envelope">&nbsp;</i> kamleshmohane78@gmail.com</p>
+        <div class="social">
+          <a href="https://bitbucket.org/%7B407ff690-ab90-40d7-926c-d9191e317f58%7D/" target="blank"><i
+              class="fab fa-bitbucket fa-2x"></i></a>
+          <a href="https://github.com/TheReticent1" target="blank"><i class="fab fa-github fa-2x"></i></i></a>
+          <a href=""><i class="fab fa-linkedin-in fa-2x"></i></a>
+          <a href=""><i class="fab fa-facebook fa-2x"></i></a>
+          <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+          <a href=""><i class="fab fa-whatsapp fa-2x"></i></a>
+          <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
