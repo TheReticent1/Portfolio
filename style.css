@@ -408,12 +408,15 @@ body {
   font-weight: bold;
   color: #4B4C50;
 }
-.card{
+
+.card {
   padding-bottom: 20px;
 }
-.card a{
+
+.card a {
   text-decoration: none;
 }
+
 .projects {
   width: 320px;
   box-sizing: border-box;
@@ -421,20 +424,24 @@ body {
   overflow: hidden;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
 }
-.projects img{
-  position:relative;
+
+.projects img {
+  position: relative;
   width: 100%;
   transition: all 0.5s;
 }
-.projects:hover img{
+
+.projects:hover img {
   transform: scale(1.2);
   background-position: center;
   overflow: hidden;
 }
+
 .projects:hover {
   cursor: pointer;
 }
-.projects:hover::after{
+
+.projects:hover::after {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -442,18 +449,20 @@ body {
   height: 180px;
   transform: translateY(-100%);
 }
-.projects::after{
+
+.projects::after {
   content: attr(data);
   display: none;
   position: absolute;
   box-sizing: border-box;
   width: 100%;
   background: rgba(0, 0, 0, 0.4);
-  color:#fff;
+  color: #fff;
   font-size: 24px;
   font-weight: normal;
   font-family: "Acme";
 }
+
 /* service */
 
 .partion {
@@ -531,44 +540,45 @@ body {
 }
 
 /*responsive */
-@media only screen and (max-width:768px){
-  .container{
+
+@media only screen and (max-width:768px) {
+  .container {
     width: 90%;
   }
   .navbar li {
     margin: 5px;
   }
-  .navbar ul{
+  .navbar ul {
     padding: 0;
   }
-  .navbar a{
+  .navbar a {
     padding: 5px 10px;
     font-size: 12px;
   }
-  .name-card h1{
+  .name-card h1 {
     font-size: 35px;
   }
-  .card{
+  .card {
     flex-wrap: wrap;
   }
-  .content{
+  .content {
     flex-wrap: wrap;
   }
-  .skills, .about{
+  .skills, .about {
     width: 100%;
   }
-  .intro{
+  .intro {
     width: 100%;
     margin: 20px;
   }
-  .images{
+  .images {
     width: 50%;
     margin: auto;
   }
-  .images img{
+  .images img {
     width: 100%;
   }
-  .heading{
+  .heading {
     width: 90%;
     margin: 0 10px;
   }
@@ -576,15 +586,24 @@ body {
     box-sizing: border-box;
     margin: 10px;
   }
-  .section{
+  .section {
     width: 80%;
     padding: 10px;
   }
-  .p2{
+  .p2 {
     padding: 12rem 0;
   }
-  .projects{
+  .projects {
     width: 90%;
     margin: 10px auto;
+  }
+  .projects:hover::after {
+    width: 90%;
+    height:auto;
+    padding: 20px 0;
+  }
+  .name-card{
+    width: 90%;
+    margin: auto;
   }
 }
