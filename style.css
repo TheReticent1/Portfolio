@@ -280,14 +280,14 @@ body {
 
 .images {
   width: 30%;
-  margin: 20px auto;
+  margin: auto;
   overflow: hidden;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
 
 .images img {
-  width: 150px;
+  width: 100%;
   float: left;
   border-radius: 5px;
 }
@@ -528,4 +528,63 @@ body {
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
   padding: 0 20px 20px 20px;
   background: #fff;
+}
+
+/*responsive */
+@media only screen and (max-width:768px){
+  .container{
+    width: 90%;
+  }
+  .navbar li {
+    margin: 5px;
+  }
+  .navbar ul{
+    padding: 0;
+  }
+  .navbar a{
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  .name-card h1{
+    font-size: 35px;
+  }
+  .card{
+    flex-wrap: wrap;
+  }
+  .content{
+    flex-wrap: wrap;
+  }
+  .skills, .about{
+    width: 100%;
+  }
+  .intro{
+    width: 100%;
+    margin: 20px;
+  }
+  .images{
+    width: 50%;
+    margin: auto;
+  }
+  .images img{
+    width: 100%;
+  }
+  .heading{
+    width: 90%;
+    margin: 0 10px;
+  }
+  .introduction p {
+    box-sizing: border-box;
+    margin: 10px;
+  }
+  .section{
+    width: 80%;
+    padding: 10px;
+  }
+  .p2{
+    padding: 12rem 0;
+  }
+  .projects{
+    width: 90%;
+    margin: 10px auto;
+  }
 }
